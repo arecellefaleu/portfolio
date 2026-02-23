@@ -350,30 +350,49 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-photo-frame {
-    width: 220px;
+    width: 200px;
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 2px solid rgba(230, 126, 34, 0.5);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(230, 126, 34, 0.4);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        0 0 0 4px rgba(15, 25, 35, 0.8),
+        0 0 0 6px rgba(230, 126, 34, 0.15);
     transition: var(--transition);
+    position: relative;
+}
+
+.hero-photo-frame::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(15, 25, 35, 0.5), transparent);
+    pointer-events: none;
 }
 
 .hero-photo-frame:hover {
     border-color: var(--accent);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
-    transform: translateY(-4px);
+    box-shadow: 
+        0 14px 44px rgba(0, 0, 0, 0.55),
+        0 0 0 4px rgba(15, 25, 35, 0.8),
+        0 0 0 6px rgba(230, 126, 34, 0.35);
+    transform: translateY(-5px);
 }
 
 .hero-photo-frame img {
     width: 100%;
     height: auto;
     display: block;
-    filter: brightness(1.05) contrast(1.05);
+    filter: brightness(1.02) contrast(1.05) saturate(1.05);
     transition: var(--transition);
 }
 
 .hero-photo-frame:hover img {
-    filter: brightness(1.1) contrast(1.08);
+    filter: brightness(1.08) contrast(1.08) saturate(1.1);
+    transform: scale(1.03);
 }
 
 @keyframes fadeInPhoto {
@@ -393,7 +412,7 @@ img { max-width: 100%; display: block; }
         margin-bottom: -40px;
     }
     .hero-photo-frame {
-        width: 180px;
+        width: 160px;
     }
 }
 
