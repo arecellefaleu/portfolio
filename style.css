@@ -974,6 +974,18 @@ img { max-width: 100%; display: block; }
     margin-bottom: 16px;
 }
 
+/* Photo dans la timeline */
+.timeline-image {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: var(--radius-sm);
+    margin: 12px 0 16px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
 .timeline-tasks li {
     position: relative;
     padding-left: 20px;
