@@ -1434,6 +1434,118 @@ img { max-width: 100%; display: block; }
     font-weight: 500;
 }
 
+/* ---------- ANALYSES & RECHERCHES ARCHITECTURALES ---------- */
+.archi-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 48px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.archi-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.archi-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.archi-card:hover {
+    border-color: rgba(230, 126, 34, 0.3);
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+}
+
+.archi-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.archi-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.archi-card:hover .archi-img {
+    filter: brightness(1.05);
+}
+
+.archi-info {
+    padding: 28px 32px 32px;
+}
+
+.archi-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    color: var(--accent-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.archi-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--text-light);
+    margin-bottom: 14px;
+}
+
+.archi-description {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.92rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.archi-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.archi-tags span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(230, 126, 34, 0.1);
+    border: 1px solid rgba(230, 126, 34, 0.2);
+    border-radius: var(--radius-xl);
+    color: var(--accent-light);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .archi-images {
+        grid-template-columns: 1fr;
+    }
+    .archi-img {
+        height: 200px;
+    }
+    .archi-info {
+        padding: 20px;
+    }
+    .archi-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
 /* ---------- CONTACT ---------- */
 .contact-grid {
     display: grid;

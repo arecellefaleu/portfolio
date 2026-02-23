@@ -19,9 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ========== TYPED TEXT EFFECT ==========
     const typedEl = document.getElementById('typed');
     const phrases = [
-        'Stagiaire Conductrice de Travaux',
+        'Ingénieure de Travaux',
+        'Calcul de Structures',
         'Passionnée d\'Écoconstruction',
-        'Ingénieure Génie Civil',
+        'Génie Civil',
         'Spécialiste Matériaux Innovants'
     ];
     let phraseIndex = 0;
