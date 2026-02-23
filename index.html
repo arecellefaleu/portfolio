@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcelle FALEU — Portfolio Génie Civil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ========== LOADER ========== -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-blueprint">
+                <svg viewBox="0 0 120 120" class="loader-svg">
+                    <rect x="10" y="40" width="100" height="60" fill="none" stroke="currentColor" stroke-width="1.5" class="draw"/>
+                    <line x1="10" y1="40" x2="60" y2="10" stroke="currentColor" stroke-width="1.5" class="draw delay-1"/>
+                    <line x1="60" y1="10" x2="110" y2="40" stroke="currentColor" stroke-width="1.5" class="draw delay-2"/>
+                    <rect x="45" y="65" width="30" height="35" fill="none" stroke="currentColor" stroke-width="1.5" class="draw delay-3"/>
+                    <rect x="20" y="55" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" class="draw delay-4"/>
+                    <rect x="85" y="55" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" class="draw delay-4"/>
+                </svg>
+            </div>
+            <p class="loader-text">Arcelle FALEU</p>
+            <p class="loader-subtext">Génie Civil & Écoconstruction</p>
+        </div>
+    </div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">▲</span>
+                <span>A<span class="logo-dot">.</span>FALEU</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about" data-section="about">À propos</a></li>
+                <li><a href="#experience" data-section="experience">Expériences</a></li>
+                <li><a href="#formation" data-section="formation">Formation</a></li>
+                <li><a href="#competences" data-section="competences">Compétences</a></li>
+                <li><a href="#projects" data-section="projects">Recherche</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#formation">Formation</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projects">Recherche</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+        <div class="hero-grid-bg"></div>
+        <div class="hero-particles" id="particles"></div>
+        <!-- Photo Arcelle en haut à gauche -->
+        <div class="hero-photo">
+            <div class="hero-photo-frame">
+                <img src="img/photo%20de%20arcelle.jpeg" alt="Arcelle Faleu">
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tag">
+                <span class="tag-dot"></span>
+                Disponible pour un stage de 4 à 6 mois
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-line line-1">Arcelle</span>
+                <span class="hero-line line-2">FALEU</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typed-text" id="typed"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-description">
+                Diplômée en Génie Civil · Master Écoconstruction & Ville Durable
+            </p>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Me contacter
+                </a>
+                <a href="#experience" class="btn btn-outline">
+                    <i class="fas fa-hard-hat"></i> Voir mes expériences
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="3">0</span>
+                    <span class="stat-label">Expériences professionnelles</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2">0</span>
+                    <span class="stat-label">Masters en cours</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="7">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Logiciels maîtrisés</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Défiler</span>
+        </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">À propos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="about-intro">
+                        Diplômée d'un <strong>Master de Génie Civil</strong> et actuellement en 
+                        <strong>Master IES / Écoconstruction et Ville Durable</strong>, je suis passionnée 
+                        par la réparation des structures et les matériaux innovants.
+                    </p>
+                    <p>
+                        Souhaitant évoluer dans un environnement technique exigeant, je recherche un 
+                        <strong>stage d'une durée de 4 à 6 mois</strong> pour consolider mes compétences 
+                        en conduite de travaux et en ingénierie de la construction durable.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>La Garenne-Colombes (92250)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Double diplôme — TERRA Institute & UHA</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-globe"></i>
+                            <span>Français · Anglais</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card reveal">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <div class="avatar-placeholder">
+                                <span>AF</span>
+                            </div>
+                        </div>
+                        <h3>Arcelle FALEU</h3>
+                        <p class="profile-role">Stagiaire Conductrice de Travaux</p>
+                        <div class="profile-badges">
+                            <span class="badge"><i class="fas fa-building"></i> Génie Civil</span>
+                            <span class="badge"><i class="fas fa-leaf"></i> Écoconstruction</span>
+                            <span class="badge"><i class="fas fa-city"></i> Ville Durable</span>
+                        </div>
+                        <div class="profile-interests">
+                            <h4>Centres d'intérêt</h4>
+                            <div class="interest-tags">
+                                <span><i class="fas fa-plane"></i> Voyages</span>
+                                <span><i class="fas fa-dumbbell"></i> Sport</span>
+                                <span><i class="fas fa-bridge"></i> Ouvrages d'Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPÉRIENCES ========== -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Expériences Professionnelles</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <!-- EXP 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> 2023 — 2025</span>
+                            <span class="timeline-type">Projet Personnel</span>
+                        </div>
+                        <h3>Travaux de Recherche en Laboratoire</h3>
+                        <p class="timeline-context">
+                            Développement de briques de terre stabilisée aux PET pour l'amélioration du 
+                            confort thermique et acoustique en construction civile.
+                        </p>
+                        <ul class="timeline-tasks">
+                            <li>Réalisation d'essais expérimentaux (résistance mécanique, conductivité thermique, absorption acoustique)</li>
+                            <li>Préparation d'échantillons et protocoles de tests en laboratoire</li>
+                            <li>Analyse comparative entre matériaux traditionnels et matériaux composites innovants</li>
+                            <li>Optimisation des dosages (terre, liant, PET) pour améliorer les performances</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Recherche</span><span>Matériaux innovants</span><span>Laboratoire</span><span>PET</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXP 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Avril — Septembre 2025</span>
+                            <span class="timeline-type">Stage</span>
+                        </div>
+                        <h3>Assistance Conductrice des Travaux — Projet R+4</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Beria Group SARL · Douala, Cameroun</p>
+                        <ul class="timeline-tasks">
+                            <li>Assurer le respect du planning, de la qualité et de la sécurité</li>
+                            <li>Contrôler l'avancement et ajuster les moyens si besoin</li>
+                            <li>Suivre les coûts et contrôler les factures</li>
+                            <li>Participer aux réunions de chantier et rédiger les comptes rendus</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Conduite de travaux</span><span>R+4</span><span>Planning</span><span>Qualité</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXP 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Mars — Juin 2024</span>
+                            <span class="timeline-type">Stage</span>
+                        </div>
+                        <h3>Assistance Chef de Chantier — Projet R+3</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Cambuilding BTP · Yaoundé, Cameroun</p>
+                        <ul class="timeline-tasks">
+                            <li>Répartir les tâches selon les compétences de chacun</li>
+                            <li>Contrôler la qualité d'exécution (mesures, alignement, bétonnage, terrassement)</li>
+                            <li>Signaler tout problème ou imprévu (retard, panne, erreur)</li>
+                            <li>Gérer les livraisons de matériaux et le stock sur le site</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Chef de chantier</span><span>R+3</span><span>Bétonnage</span><span>Terrassement</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EXP 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-marker">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date"><i class="far fa-calendar"></i> Juin — Août 2023</span>
+                            <span class="timeline-type">Stage</span>
+                        </div>
+                        <h3>Bureau d'Études</h3>
+                        <p class="timeline-company"><i class="fas fa-building"></i> Beta Construction · Douala, Cameroun</p>
+                        <ul class="timeline-tasks">
+                            <li>Participation à l'élaboration des plans d'exécution (AutoCAD)</li>
+                            <li>Réalisation de métrés et estimation des quantités de matériaux</li>
+                            <li>Assistance aux ingénieurs dans le calcul de structures simples</li>
+                            <li>Contribution à la rédaction de rapports techniques et au classement des documents</li>
+                            <li>Participation à une visite de chantier pour le suivi d'avancement des travaux</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Bureau d'études</span><span>AutoCAD</span><span>Métrés</span><span>Plans</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FORMATION ========== -->
+    <section id="formation" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Diplômes & Formations</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="formation-grid">
+
+                <div class="formation-card reveal">
+                    <div class="formation-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="formation-year">2025 — 2027</div>
+                    <h3>Master Écoconstruction et Ville Durable</h3>
+                    <p class="formation-school">
+                        <i class="fas fa-university"></i> 
+                        TERRA Institute & Université de Haute-Alsace — Paris
+                    </p>
+                    <span class="formation-badge">Double Diplôme · IES</span>
+                    <ul class="formation-modules">
+                        <li>Analyse de projet et ville durable</li>
+                        <li>Construction bois</li>
+                        <li>Construction terre</li>
+                    </ul>
+                </div>
+
+                <div class="formation-card reveal">
+                    <div class="formation-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="formation-year">2025</div>
+                    <h3>Master Génie Civil</h3>
+                    <p class="formation-school">
+                        <i class="fas fa-university"></i> 
+                        Institut Universitaire des Grandes Écoles des Tropiques — Cameroun
+                    </p>
+                    <span class="formation-badge">Diplôme obtenu</span>
+                    <ul class="formation-modules">
+                        <li>Méthodes numériques et calcul des structures</li>
+                        <li>Modélisation hydrologique, hydraulique et assainissement</li>
+                        <li>Matériaux locaux, innovants et durabilité des constructions</li>
+                        <li>Topographie appliquée</li>
+                    </ul>
+                </div>
+
+                <div class="formation-card reveal">
+                    <div class="formation-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="formation-year">2023</div>
+                    <h3>Licence Technologique de Génie Civil</h3>
+                    <p class="formation-school">
+                        <i class="fas fa-university"></i> 
+                        Institut Universitaire de Technologie de Douala — Cameroun
+                    </p>
+                    <span class="formation-badge">Diplôme obtenu</span>
+                    <ul class="formation-modules">
+                        <li>Hydrogéologie</li>
+                        <li>Ingénierie géologie</li>
+                        <li>Sécurité, urbanisme et environnement</li>
+                        <li>Génie du bâtiment</li>
+                        <li>Stabilité des constructions et génie parasismique</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="competences" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04</span>
+                <h2 class="section-title">Compétences</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="competences-grid">
+
+                <!-- Hard Skills -->
+                <div class="competence-block reveal">
+                    <div class="competence-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Hard Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Conception et calcul des structures BA et métalliques</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Suivi et contrôle technique de chantier</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Gestion de projet et planification</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lecture et analyse de plans</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Métrés et estimations</span>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logiciels -->
+                <div class="competence-block reveal">
+                    <div class="competence-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Logiciels DAO/CAO</h3>
+                    <div class="software-grid">
+                        <div class="software-item">
+                            <div class="software-logo" style="background: rgba(229,16,80,0.1);">
+                                <img src="https://cdn.simpleicons.org/autocad/E51050" alt="AutoCAD">
+                            </div>
+                            <span class="software-name">AutoCAD</span>
+                        </div>
+                        <div class="software-item">
+                            <div class="software-logo" style="background: rgba(45,80,165,0.1);">
+                                <img src="https://cdn.simpleicons.org/archicad/2D50A5" alt="ArchiCAD">
+                            </div>
+                            <span class="software-name">ArchiCAD</span>
+                        </div>
+                        <div class="software-item">
+                            <div class="software-logo" style="background: rgba(0,0,0,0.08);">
+                                <img src="https://cdn.simpleicons.org/autodesk/FFFFFF" alt="Robot Structural Analysis">
+                            </div>
+                            <span class="software-name">Robot Structural</span>
+                        </div>
+                        <div class="software-item">
+                            <div class="software-logo" style="background: rgba(24,107,255,0.1);">
+                                <img src="https://cdn.simpleicons.org/autodeskrevit/186BFF" alt="Revit">
+                            </div>
+                            <span class="software-name">Revit</span>
+                        </div>
+                        <div class="software-item">
+                            <div class="software-logo" style="background: rgba(49,117,47,0.1);">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Project_%282019%E2%80%93present%29.svg" alt="MS Project">
+                            </div>
+                            <span class="software-name">MS Project</span>
+                        </div>
+                        <div class="software-item">
+                            <div class="software-logo" style="background: rgba(0,95,158,0.1);">
+                                <img src="https://cdn.simpleicons.org/sketchup/005F9E" alt="SketchUp">
+                            </div>
+                            <span class="software-name">SketchUp</span>
+                        </div>
+                        <div class="software-item">
+                            <div class="software-logo lumion-logo" style="background: rgba(76,168,43,0.1);">
+                                <img src="img/lumion.png" alt="Lumion">
+                            </div>
+                            <span class="software-name">Lumion</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Langues -->
+                <div class="competence-block reveal">
+                    <div class="competence-icon"><i class="fas fa-language"></i></div>
+                    <h3>Langues</h3>
+                    <div class="langue-item">
+                        <div class="langue-header">
+                            <span class="langue-name">Français</span>
+                            <span class="langue-level">Langue maternelle</span>
+                        </div>
+                        <div class="langue-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                        </div>
+                    </div>
+                    <div class="langue-item">
+                        <div class="langue-header">
+                            <span class="langue-name">Anglais</span>
+                            <span class="langue-level">Professionnel</span>
+                        </div>
+                        <div class="langue-dots">
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot filled"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJET DE RECHERCHE ========== -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05</span>
+                <h2 class="section-title">Projet de Recherche</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="research-showcase reveal">
+                <div class="research-visual">
+                    <div class="research-icon-big">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="research-decorations">
+                        <div class="deco deco-1"><i class="fas fa-cube"></i></div>
+                        <div class="deco deco-2"><i class="fas fa-thermometer-half"></i></div>
+                        <div class="deco deco-3"><i class="fas fa-volume-up"></i></div>
+                        <div class="deco deco-4"><i class="fas fa-recycle"></i></div>
+                    </div>
+                </div>
+                <div class="research-info">
+                    <span class="research-label">Projet de Recherche Personnel · 2023-2025</span>
+                    <h3>Briques de terre stabilisée aux PET</h3>
+                    <p class="research-subtitle">
+                        Amélioration du confort thermique et acoustique en construction civile
+                    </p>
+                    <div class="research-highlights">
+                        <div class="highlight">
+                            <div class="highlight-icon"><i class="fas fa-flask"></i></div>
+                            <div>
+                                <h4>Essais expérimentaux</h4>
+                                <p>Résistance mécanique, conductivité thermique, absorption acoustique</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon"><i class="fas fa-balance-scale"></i></div>
+                            <div>
+                                <h4>Analyse comparative</h4>
+                                <p>Matériaux traditionnels vs matériaux composites innovants</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="highlight-icon"><i class="fas fa-sliders-h"></i></div>
+                            <div>
+                                <h4>Optimisation</h4>
+                                <p>Dosages terre, liant et PET pour performances maximales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="research-tags">
+                        <span><i class="fas fa-leaf"></i> Éco-matériaux</span>
+                        <span><i class="fas fa-recycle"></i> Recyclage PET</span>
+                        <span><i class="fas fa-home"></i> Construction durable</span>
+                        <span><i class="fas fa-chart-line"></i> R&D</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Restons en contact</h3>
+                    <p>
+                        N'hésitez pas à me contacter pour toute opportunité de stage 
+                        ou collaboration dans le domaine du génie civil et de l'écoconstruction.
+                    </p>
+                    <div class="contact-items">
+                        <a href="mailto:arecellefaleu@gmail.com" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">arecellefaleu@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+33751029735" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Téléphone</span>
+                                <span class="contact-value">07 51 02 97 35</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <span class="contact-label">Localisation</span>
+                                <span class="contact-value">La Garenne-Colombes (92250)</span>
+                            </div>
+                        </div>
+                        <a href="https://www.cvdesignr.com" target="_blank" class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                            <div>
+                                <span class="contact-label">CV en ligne</span>
+                                <span class="contact-value">www.cvdesignr.com</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Votre nom</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Votre email</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" required placeholder=" ">
+                            <label for="subject">Sujet</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                            <span class="form-line"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">▲</span>
+                    <span>Arcelle FALEU</span>
+                </div>
+                <p class="footer-tagline">Génie Civil · Écoconstruction · Ville Durable</p>
+                <div class="footer-social">
+                    <a href="mailto:arecellefaleu@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+33751029735" aria-label="Téléphone"><i class="fas fa-phone"></i></a>
+                    <a href="https://www.cvdesignr.com" target="_blank" aria-label="CV"><i class="fas fa-globe"></i></a>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Arcelle FALEU — Tous droits réservés</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="backToTop" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
